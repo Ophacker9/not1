@@ -173,8 +173,7 @@ while (true) {
                 echo printColored("[ SUCCESS ] ++ Injected to $userId.\n", $green);
             } else {
                 echo printColored("[ ERROR ] Ads watching limit reached.\n", $red);
-                echo printColored("[ SOLUTION ] Try VPN or wait for 24 hours.\nUse Proton VPN install it from play store.\n", $green);
-                echo printColored("[ REPORT ] If facing issue again and again Send Details and ScreenShot Contact Developer Telegram @savanop\n", $yellow);
+                echo printColored("[ SOLUTION ] Try VPN 
                 continue;
             }
         } elseif ($httpCode === 403) {
@@ -191,7 +190,7 @@ while (true) {
         }
     }
 
-    for ($i = 32; $i > 0; $i--) {
+    for ($i = 35; $i > 0; $i--) {
         echo "\r-----> Cooldown $i seconds left...";
         sleep(1);
     }
