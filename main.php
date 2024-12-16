@@ -146,8 +146,7 @@ while (true) {
                 echo printColored("[ SUCCESS ] ++ Injected to $userId.\n", $green);
             } else {
                 echo printColored("[ ERROR ] Ads watching limit reached.\n", $red)
-                continue;
-            }
+             
         } elseif ($httpCode === 403) {
             echo printColored("[ ERROR ] Seems like your IP address is banned\n", $red);
             echo printColored("[ SOLUTION ] Use Proton VPN install it from play store.\n", $yellow);
