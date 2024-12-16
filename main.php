@@ -13,7 +13,7 @@ function clearScreen() {
 function generateUserAgent() {
     $os = ['Windows', 'Linux', 'iOS', 'Android'];
     $versions = ['8', '9', '10', '11', '12', '13', '14'];
-    $devices = ['Samsung', 'OnePlus', 'Pixel', 'Nokia', 'Huawei'];
+    $devices = ['Samsung', 'github_pat_11BM77D3Y
     
     $selectedOs = $os[array_rand($os)];
     
@@ -38,6 +38,33 @@ $green = "32";
 $red = "31"; 
 $yellow = "33";
 $blue = "34";
+
+// Function to print banner
+function printBanner() {
+    global $green;
+    $banner = "
+  ____                  _          _                    ___   ___   
+ / ___|_ __ _   _ _ __ | |_ ___   | |__   ___  ___ ___ / _ \ / _ \  
+| |   | '__| | | | '_ \| __/ _ \  | '_ \ / _ \/ __/ __| (_) | | | | 
+| |___| |  | |_| | |_) | || (_) | | |_) | (_) \__ \__ \\__, | |_| | 
+ \____|_|   \__, | .__/ \__\___/  |_.__/ \___/|___/___/  /_/ \___/  
+            |___/|_|                                                
+
+     - NOT PIXEL AD WATCH -
+     
+              - VERSION 2.0 -
+    
+- MADE BY : ophacker(crypto boss90)
+
+- Note: If you encounter the issue \"URL not found\"
+  kindly ignore it.  
+- PX Points will be added to your account within 32seconds.
+
+-------------------------------------------------
+
+";
+    echo printColored($banner, $green);
+}
 
 // Check for users.json file
 $usersFile = 'users.json';
@@ -145,8 +172,11 @@ while (true) {
                 $headers[$userId] = $reqHeaders;
                 echo printColored("[ SUCCESS ] ++ Injected to $userId.\n", $green);
             } else {
-                echo printColored("[ ERROR ] Ads watching limit reached.\n", $red)
-             
+                echo printColored("[ ERROR ] Ads watching limit reached.\n", $red);
+                echo printColored("[ SOLUTION ] Try VPN or wait for 24 hours.\nUse Proton VPN install it from play store.\n", $green);
+                echo printColored("[ REPORT ] If facing issue again and again Send Details and ScreenShot Contact Developer Telegram @savanop\n", $yellow);
+                continue;
+            }
         } elseif ($httpCode === 403) {
             echo printColored("[ ERROR ] Seems like your IP address is banned\n", $red);
             echo printColored("[ SOLUTION ] Use Proton VPN install it from play store.\n", $yellow);
