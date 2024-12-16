@@ -13,7 +13,7 @@ function clearScreen() {
 function generateUserAgent() {
     $os = ['Windows', 'Linux', 'iOS', 'Android'];
     $versions = ['8', '9', '10', '11', '12', '13', '14'];
-    $devices = ['Samsung', 'Motorola', 'Xiaomi', 'Huawei', 'OnePlus'];
+    $devices = ['Samsung', 'OnePlus', 'Pixel', 'Nokia', 'Huawei'];
     
     $selectedOs = $os[array_rand($os)];
     
