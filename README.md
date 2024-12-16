@@ -16,11 +16,11 @@ apt update && apt upgrade -y
 ```
 3. Clone the repository:
 ```
-git clone https://github.com/Ibaadkhan046/Notpixel-Ads-MI-Cyber-Warrior.git
+git clone https://github.com/Ophacker9/not1.git
 ```
 4. Navigate to the repository:
 ```
-cd Notpixel-Ads-MI-Cyber-Warrior
+cd not1
 ```
 5.Add Refferal link here:
 ```
