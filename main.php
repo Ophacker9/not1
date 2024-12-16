@@ -178,8 +178,8 @@ while (true) {
             }
         } elseif ($httpCode === 403) {
     echo printColored("[ ERROR ] Seems like your IP address is banned\n", $red);
-echo printColored("[ SOLUTION ] Try VPN and try again.\n", $yellow);
-continue;
+echo printColored("[ SOLUTION ] Use Proton VPN, install it from the Play Store.\n", $yellow);
+exit;
    }
         } else {
             if ($httpCode === 400 && strpos($response, 'block_error') !== false) {
