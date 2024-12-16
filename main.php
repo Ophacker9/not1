@@ -11,7 +11,7 @@ function clearScreen() {
 
 // Function to generate random user agent
 function generateUserAgent() {
-    $os = ['Windows', 'Linux', 'iOS', 'Android'];
+    $devices = ['Samsung', 'Xiaomi', 'OnePlus', 'Oppo', 'Realme', 'Vivo', 'Huawei'];
     $versions = ['8', '9', '10', '11', '12', '13', '14'];
     $devices = ['Samsung', 'github_pat_11BM77D3Y'];
     
