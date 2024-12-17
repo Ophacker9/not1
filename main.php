@@ -172,8 +172,7 @@ while (true) {
                 $headers[$userId] = $reqHeaders;
                 echo printColored("[ SUCCESS ] ++ Injected to $userId.\n", $green);
             } else {
-                echo printColored("[ ERROR ] Ads watching limit reached.\n", $red);
-                echo printColored("[ SOLUTION ] Try VPN 
+                echo printColored("[ ERROR ] Ads watching limit 
                 continue;
             }
         } elseif ($httpCode === 403) {
