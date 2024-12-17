@@ -58,7 +58,7 @@ function printBanner() {
 
 - Note: If you encounter the issue \"URL not found\"
   kindly ignore it.  
-- PX Points will be added to your account within 32seconds.
+- PX Points will be added to your account within 35 seconds.
 
 -------------------------------------------------
 
@@ -172,17 +172,16 @@ while (true) {
                 $headers[$userId] = $reqHeaders;
                 echo printColored("[ SUCCESS ] ++ Injected to $userId.\n", $green);
             } else {
-                echo printColored("[ ERROR ] Ads watching limit 
+                echo printColored("[ ERROR ] Ads watching limit reached for $userId. Skipping...\n", $red);
                 continue;
             }
         } elseif ($httpCode === 403) {
-    echo printColored("[ ERROR ] Seems like your IP address is banned.\n", $red);
-echo printColored("[ SOLUTION ] Use Proton VPN, install it from the Play Store.\n", $yellow);
-exit;
-   }
+            echo printColored("[ ERROR ] Seems like your IP address is banned.\n", $red);
+            echo printColored("[ SOLUTION ] Use Proton VPN, install it from the Play Store.\n", $yellow);
+            exit;
         } else {
             if ($httpCode === 400 && strpos($response, 'block_error') !== false) {
-                echo printColored("[ ERROR ] Ads Block error - Ignore it will be fixed automatically -\n", $red);
+                echo printColored("[ ERROR ] Ads Block error - Ignore, it will fix automatically -\n", $red);
                 continue;
             }
             echo printColored("[ ERROR ] HTTP Error: $httpCode\n", $red);
@@ -222,3 +221,4 @@ exit;
 }
 
 ?>
+    
